@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f11911413b312b8e9e7c3f14325387ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f11911413b312b8e9e7c3f14325387ce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f11911413b312b8e9e7c3f14325387ce = L.map(
+                "map_f11911413b312b8e9e7c3f14325387ce",
+                {
+                    center: [24.826, 67.1014],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f795624d5a1a956bf67bba6bb5025c56 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f795624d5a1a956bf67bba6bb5025c56.addTo(map_f11911413b312b8e9e7c3f14325387ce);
+        
+    
+            var marker_b91c8d33c8ade04b356afb9f96ece8d4 = L.marker(
+                [24.826, 67.1014],
+                {
+}
+            ).addTo(map_f11911413b312b8e9e7c3f14325387ce);
+        
+    
+            var icon_d20aac879f5350975ec5b5dc106b3d2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01cdd5691a32da2974d2cdc31fe00a25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a00d06eadb6520538a5042ef0b69085a = $(`<div id="html_a00d06eadb6520538a5042ef0b69085a" style="width: 100.0%; height: 100.0%;">Location: Karachi, Pakistan</div>`)[0];
+                popup_01cdd5691a32da2974d2cdc31fe00a25.setContent(html_a00d06eadb6520538a5042ef0b69085a);
+            
+        
+
+        marker_b91c8d33c8ade04b356afb9f96ece8d4.bindPopup(popup_01cdd5691a32da2974d2cdc31fe00a25)
+        ;
+
+        
+    
+    
+                marker_b91c8d33c8ade04b356afb9f96ece8d4.setIcon(icon_d20aac879f5350975ec5b5dc106b3d2b);
+            
+</script>
+</html>
